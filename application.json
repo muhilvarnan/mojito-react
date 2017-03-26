@@ -1,0 +1,59 @@
+[
+    {
+        "settings": [ "master" ],
+        "specs": {
+          "patientInit": {
+            "type": "HTMLFrameMojit",
+            "config": {
+              "deploy": true,
+              "title": "Trib - YUI/Mojito Developer Dashboard",
+              "child": {
+                "type": "layout",
+                "config": {
+                  "children": {
+                    "header": {
+                      "type": "Header"
+                    },
+                    "patient": {
+                      "type": "patient"
+                    },
+                    "footer": {
+                      "type": "Footer"
+                    }
+                  }
+                }
+              }
+          }
+        },
+        "formBuilderInit": {
+          "type": "HTMLFrameMojit",
+          "config": {
+            "deploy": true,
+            "title": "Trib - YUI/Mojito Developer Dashboard",
+            "child": {
+              "type": "layout",
+              "config": {
+                "children": {
+                  "header": {
+                    "type": "Header"
+                  },
+                  "formBuilder": {
+                    "type": "form_builder"
+                  },
+                  "footer": {
+                    "type": "Footer"
+                  }
+                }
+              }
+            }
+        }
+      }
+      }
+    },
+    {
+        "settings": [ "environment:development" ],
+        "staticHandling": {
+            "forceUpdate": true
+        }
+    }
+]
